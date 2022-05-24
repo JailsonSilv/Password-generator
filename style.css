@@ -1,0 +1,158 @@
+/*>>>>>>>>>>>>>>>>>RESET<<<<<<<<<<<<<<<<<<<<<<<*/
+*{
+    font-family: sans-serif;
+
+    width: 100%;
+    margin-inline: auto;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*>>>>>>>>>>>>>>>>>IMG<<<<<<<<<<<<<<<<<<<<<<<*/
+.logo {
+    max-width: 37.5rem;
+
+    margin-top: 1.9rem;
+}
+
+/*>>>>>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<<<<<<<<<<<*/
+.container-input {
+    max-width: 30rem;
+    margin: 0.6rem 0rem;
+}
+
+.container-input span {
+    color: white;
+    font-size: 1.375rem;
+}
+
+.slider {
+    background: #bebebeb2;
+
+    -webkit-appearance: none;
+    outline: none;
+
+    border-radius: 0.313rem;
+    width: 100%;
+    height: 1.125rem;
+    
+    margin-top: 0.5rem;
+}
+
+.button-cta {
+    color: white;
+    background:#3eb72b ;
+    
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    margin-top: 2.5rem;
+
+    height: 3.2rem;
+
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*>>>>>>>>>>>>>>>>>DIV FINAL<<<<<<<<<<<<<<<<<<<<<<<*/
+.container-password {
+
+    max-width: 30rem;
+    margin: 0.875rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.title  {
+    color: white;
+
+    text-align: center ;
+    font-size: 1.4rem;
+
+    margin-top: 1.5rem;
+    margin-bottom: 0.50rem;
+}
+
+.password {
+    color: rgba(255, 255, 0, 0.596);
+    background-color:#bebebeb2;
+
+    height: 4.3rem;
+    border-radius: 0.30rem;
+    border: 0.093rem solid rgb(29, 185, 224);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.04rem;
+    letter-spacing: 0.3rem;
+
+    transition: 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.04);
+
+    transition: 0.5s;
+
+    color:yellow;
+}
+
+.tooltip {
+    background: #bebebeb2;
+
+    border-radius: 0.30rem;
+
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+    position: relative;
+    top: 1.25rem;
+    padding: 0.375rem  0.5rem;
+    margin-bottom: 3.5rem;
+
+    text-align: center; 
+
+    opacity: 0;
+    transition: all 1s;
+
+    visibility: hidden;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+
+    bottom: 3rem;
+
+    transition: all 2s ease-in-out;
+}
+
+/*>>>>>>>>>>>>>>>>>.HIDE DE DENTRO DA DIV<<<<<<<<<<<<<<<<<<<<<<<*/
+.hide {
+    display: none;
+}
